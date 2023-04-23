@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://fonts.google.com/specimen/Ubuntu">
 	<link rel="icon" type="image/x-icon" href="https://lh4.googleusercontent.com/AuyVYAsUNczh28zZ4qySFNfIS2uyb0SQwxzKCuxlwjJpiq2mWNts9cuMZZDMQjEuxCU=w2400">
 	<script type="text/javascript">
-			let rooturl ="http://localhost:3030/product/1"
+			let rooturl ="http://localhost:3030/product/4"
 			fetch(rooturl)  
 			.then((res) => res.json()) // Get JSON from the response
 			.then((data) => {
@@ -39,7 +39,7 @@
           <li><a href="/Project1-webpro\html\search.html">Search</a></li>
 			  </ul>
       </ul>
-      <form action="search.html" method="GET">
+      <form action="/search" method="GET">
 				<input type="text" id="search-box"placeholder="Search.." name="search-box">
 				<select id="criteria" name="criteria">
 					<option value="product-name">Product Name</option>
