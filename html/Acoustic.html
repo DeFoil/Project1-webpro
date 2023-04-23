@@ -17,6 +17,28 @@
 
   <!-- The link element specifies the icon used by the document -->
   <link rel="icon" type="image/x-icon" href="https://lh4.googleusercontent.com/AuyVYAsUNczh28zZ4qySFNfIS2uyb0SQwxzKCuxlwjJpiq2mWNts9cuMZZDMQjEuxCU=w2400">
+  
+  <script type="text/javascript">
+    let rooturl ="http://localhost:3030/product/1"
+    fetch(rooturl)  
+    .then((res) => res.json()) // Get JSON from the response
+    .then((data) => {
+      console.log(data.data)
+      document.querySelector("#name").innerHTML="";
+      document.querySelector("#name").innerHTML += "<h3>"+data.data.product_name+"</h3>"	
+      })
+    .then((data) => {
+      console.log(data.data)
+      document.querySelector("#detail").innerHTML="";
+      document.querySelector("#detail").innerHTML += "<h3>"+data.data.product_detail+"</h3>"	
+    })
+    .then((data) => {
+      console.log(data.data)
+      document.querySelector("#price").innerHTML="";
+      document.querySelector("#price").innerHTML += "<h3>"+data.data.product_price+"</h3>"	
+    })      
+</script>
+
 </head>
 
 <body>

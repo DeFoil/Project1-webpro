@@ -15,7 +15,17 @@
 				console.log(data.data)
 				document.querySelector("#name").innerHTML="";
 				document.querySelector("#name").innerHTML += "<h3>"+data.data.product_name+"</h3>"	
-				})   
+				})
+			.then((data) => {
+				console.log(data.data)
+				document.querySelector("#detail").innerHTML="";
+				document.querySelector("#detail").innerHTML += "<h3>"+data.data.product_detail+"</h3>"	
+			})
+			.then((data) => {
+				console.log(data.data)
+				document.querySelector("#price").innerHTML="";
+				document.querySelector("#price").innerHTML += "<h3>"+data.data.product_price+"</h3>"	
+			})      
 	</script>
 </head>
 <body>
